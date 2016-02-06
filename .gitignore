@@ -1,4 +1,6 @@
 # Directories to Ignore
 /.vagrant
+/vendor
 
 # Files to Ignore
+.env

@@ -3,14 +3,10 @@
 namespace App\Models\Blog;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Article extends Model
+class Article extends BaseModel
 {
-    use \App\Models\Traits\UuidKey;
-
     // set table name
     protected $table = 'blog_articles';
-
-    // disable auto-incrementing key generation for model
-    public $incrementing = false;
 }

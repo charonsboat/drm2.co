@@ -14,3 +14,13 @@
 $app->get('/', function () use ($app) {
     return view('home');
 });
+
+// ANY /blog/?
+$app->group(['prefix' => '/blog'], function () use ($app)
+{
+    // GET /blog
+    $app->get('/', function ()
+    {
+        return view('blog.home');
+    });
+});

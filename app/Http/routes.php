@@ -24,3 +24,10 @@ $app->group(['prefix' => '/blog'], function () use ($app)
         return view('blog.home');
     });
 });
+
+// ANY /blog/articles/?
+$app->group(['prefix' => '/blog/articles'], function () use ($app)
+{
+    // GET /blog/articles/{id}
+    $app->get('/{id}', 'App\Http\Controllers\Blog\ArticleController@getArticle');
+});

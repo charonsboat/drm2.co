@@ -13,6 +13,10 @@ class Blog_ArticleSeeder extends Seeder
     public function run()
     {
         $article = new Article();
+
+        $article->title   = 'Hello, World!';
+        $article->content = '# Hello';
+
         $article->save();
     }
 }

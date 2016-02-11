@@ -28,6 +28,9 @@ $app->group(['prefix' => '/blog'], function () use ($app)
 // ANY /blog/articles/?
 $app->group(['prefix' => '/blog/articles'], function () use ($app)
 {
+    // POST /blog/articles
+    $app->post('/', 'App\Http\Controllers\Blog\ArticleController@createArticle');
+
     // GET /blog/articles/{id}
     $app->get('/{id}', 'App\Http\Controllers\Blog\ArticleController@getArticle');
 });

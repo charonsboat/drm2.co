@@ -16,8 +16,11 @@ class CreateArticlesTable extends Migration
         {
             $table->string('id')->primary();
             $table->string('title');
+            $table->string('title_stub');
             $table->text('content');
+            $table->text('content_markdown');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

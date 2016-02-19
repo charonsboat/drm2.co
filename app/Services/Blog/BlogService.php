@@ -38,4 +38,15 @@ class BlogService
 
         $article->save();
     }
+
+    /**
+     * Deletes the Article with the specified identifier.
+     *
+     * @param $id string
+     * @return void
+     */
+    public static function DeleteArticle($id)
+    {
+        Article::destroy($id);
+    }
 }

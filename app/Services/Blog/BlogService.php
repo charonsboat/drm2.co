@@ -3,6 +3,7 @@
 namespace App\Services\Blog;
 
 use App\Models\Blog\Article;
+use Cocur\Slugify\Slugify;
 use Parsedown;
 
 class BlogService
@@ -27,14 +28,17 @@ class BlogService
      * @param $content string
      * @return void
      */
-    public static function CreateArticle($title, $content)
+    public static function CreateArticle($title = '', $content = '')
     {
+        $slugify = new Slugify();
         $article = new Article();
 
-        $article->title   = $title;
-        $article->content = Parsedown::instance()
-                            ->setMarkupEscaped(true)
-                            ->text($content);
+        $article->title            = $title;
+        $article->title_slug       = $slugify->slugify($title);
+        $article->content_markdown = $content;
+        $article->content          = Parsedown::instance()
+                                     ->setMarkupEscaped(true)
+                                     ->text($content);
 
         $article->save();
     }

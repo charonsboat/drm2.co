@@ -26,4 +26,11 @@ class ArticleController extends BaseController
         // convert article to json data for transmission
         return response()->json($article);
     }
+
+    // DELETE /blog/articles/{id}
+    // Returns: void
+    public function deleteArticle($id)
+    {
+        BlogService::DeleteArticle($id);
+    }
 }

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Blog\Article;
+use App\Services\Blog\BlogService;
 
 class Blog_ArticleSeeder extends Seeder
 {
@@ -12,11 +12,9 @@ class Blog_ArticleSeeder extends Seeder
      */
     public function run()
     {
-        $article = new Article();
+        $title   = 'Hello, World!';
+        $content = '## Hello again, world!';
 
-        $article->title   = 'Hello, World!';
-        $article->content = '# Hello';
-
-        $article->save();
+        BlogService::CreateArticle($title, $content);
     }
 }

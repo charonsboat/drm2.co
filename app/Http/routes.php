@@ -33,4 +33,7 @@ $app->group(['prefix' => '/blog/articles'], function () use ($app)
 
     // GET /blog/articles/{id}
     $app->get('/{id}', 'App\Http\Controllers\Blog\ArticleController@getArticle');
+
+    // DELETE /blog/articles/{id}
+    $app->delete('/{id}', 'App\Http\Controllers\Blog\ArticleController@deleteArticle');
 });

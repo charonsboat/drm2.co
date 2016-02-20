@@ -9,7 +9,7 @@ use Parsedown;
 class BlogService
 {
     /**
-     * Returns the Article with the specified identifier.
+     * Returns the specified Article.
      *
      * @param $id string
      * @return Article
@@ -28,7 +28,7 @@ class BlogService
      * @param $content string
      * @return void
      */
-    public static function CreateArticle($title = '', $content = '')
+    public static function CreateArticle($title, $content)
     {
         $slugify = new Slugify();
         $article = new Article();
@@ -44,7 +44,30 @@ class BlogService
     }
 
     /**
-     * Deletes the Article with the specified identifier.
+     * Updates the specified Article.
+     *
+     * @param $id string
+     * @param $title string
+     * @param $content string
+     * @return void
+     */
+    public static function UpdateArticle($id, $title, $content)
+    {
+        $slugify = new Slugify();
+        $article = Article::find($id);
+
+        $article->title            = $title;
+        $article->title_slug       = $slugify->slugify($title);
+        $article->content_markdown = $content;
+        $article->content          = Parsedown::instance()
+                                     ->setMarkupEscaped(true)
+                                     ->text($content);
+
+        $article->save();
+    }
+
+    /**
+     * Deletes the specified Article.
      *
      * @param $id string
      * @return void

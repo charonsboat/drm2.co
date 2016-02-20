@@ -8,6 +8,9 @@ try {
     //
 }
 
+// load global helper functions
+require_once __DIR__.'/helpers.php';
+
 /*
 |--------------------------------------------------------------------------
 | Create The Application
@@ -81,6 +84,7 @@ $app->singleton(
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+$app->register(App\Providers\CustomJWTAuthServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

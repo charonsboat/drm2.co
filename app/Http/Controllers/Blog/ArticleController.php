@@ -27,6 +27,15 @@ class ArticleController extends BaseController
         return response()->json($article);
     }
 
+    // PUT /blog/articles/{id}
+    // Returns: void
+    public function updateArticle($id, Request $request)
+    {
+        $data = $request->json();
+
+        BlogService::UpdateArticle($id, $data->get('title'), $data->get('content'));
+    }
+
     // DELETE /blog/articles/{id}
     // Returns: void
     public function deleteArticle($id)

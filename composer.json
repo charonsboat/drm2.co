@@ -10,7 +10,8 @@
         "vlucas/phpdotenv": "~2.2",
         "ramsey/uuid": "^3.1",
         "erusev/parsedown": "^1.6",
-        "cocur/slugify": "^1.4"
+        "cocur/slugify": "^1.4",
+        "tymon/jwt-auth": "^0.5.9"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

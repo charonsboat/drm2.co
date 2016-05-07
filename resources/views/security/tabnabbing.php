@@ -18,20 +18,21 @@
             font-family: 'Open Sans';
             justify-content: center;
             margin: 0;
+            text-align: center;
         }
-        h1
+        #message
         {
             font-size: 7rem;
         }
     </style>
 </head>
 <body>
-    <h1>;)</h1>
+    <h1 id="message">;)</h1>
 
     <script>
         if ('#attack' === window.location.hash)
         {
-            alert('This could have been an attack!');
+            document.getElementById('message').innerHTML = 'This could have been a phishing attack...';
         }
         else
         {

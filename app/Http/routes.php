@@ -11,32 +11,47 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return view('home');
-});
-
-// ANY /blog/?
-$app->group(['prefix' => '/blog'], function () use ($app)
+$app->group([ 'prefix' => '/' ], function () use ($app)
 {
-    // GET /blog
-    $app->get('/', function ()
+    $app->get('/', function () use ($app) {
+        return view('home');
+    });
+
+    $app->group([ 'prefix' => '/security' ], function () use ($app)
     {
-        return view('blog.home');
+        $app->get('/tabnabbing', function ()
+        {
+            return view('security.tabnabbing');
+        });
     });
 });
 
-// ANY /blog/articles/?
-$app->group(['prefix' => '/blog/articles'], function () use ($app)
-{
-    // POST /blog/articles
-    $app->post('/', 'App\Http\Controllers\Blog\ArticleController@createArticle');
 
-    // GET /blog/articles/{id}
-    $app->get('/{id}', 'App\Http\Controllers\Blog\ArticleController@getArticle');
 
-    // PUT /blog/articles/{id}
-    $app->put('/{id}', 'App\Http\Controllers\Blog\ArticleController@updateArticle');
 
-    // DELETE /blog/articles/{id}
-    $app->delete('/{id}', 'App\Http\Controllers\Blog\ArticleController@deleteArticle');
-});
+
+// // ANY /blog/?
+// $app->group(['prefix' => '/blog'], function () use ($app)
+// {
+//     // GET /blog
+//     $app->get('/', function ()
+//     {
+//         return view('blog.home');
+//     });
+//
+//     // ANY /blog/articles/?
+//     $app->group(['prefix' => '/articles'], function () use ($app)
+//     {
+//         // POST /blog/articles
+//         $app->post('/', 'App\Http\Controllers\Blog\ArticleController@createArticle');
+//
+//         // GET /blog/articles/{id}
+//         $app->get('/{id}', 'App\Http\Controllers\Blog\ArticleController@getArticle');
+//
+//         // PUT /blog/articles/{id}
+//         $app->put('/{id}', 'App\Http\Controllers\Blog\ArticleController@updateArticle');
+//
+//         // DELETE /blog/articles/{id}
+//         $app->delete('/{id}', 'App\Http\Controllers\Blog\ArticleController@deleteArticle');
+//     });
+// });

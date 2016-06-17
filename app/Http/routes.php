@@ -17,6 +17,11 @@ $app->group([ 'prefix' => '/' ], function () use ($app)
         return view('home');
     });
 
+    $app->get('/Vagrantfile', function ()
+    {
+        return redirect('https://raw.githubusercontent.com/drmyersii/vagrant-env-basher/master/Vagrantfile', 302);
+    });
+
     $app->group([ 'prefix' => '/security' ], function () use ($app)
     {
         $app->get('/tabnabbing', function ()

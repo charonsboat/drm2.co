@@ -13,7 +13,7 @@
     <main itemscope itemtype="https://schema.org/Person">
         <h1 class="title" itemprop="name">David R. Myers II</h1>
         <p class="tagline">#WebDevelopment #DevOps #Adventure</p>
-        <p class="tagline"><a href="https://twitter.com/drmyersii">@twitter</a> | <a href="https://github.com/drmyersii">@github</a></p>
+        <p class="tagline"><a href="https://twitter.com/drmyersii">@twitter</a> | <a href="https://github.com/drm2">@github</a></p>
     </main>
 </body>
 </html>

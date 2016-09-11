@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/drm2
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://drm2.co
+  * I am drm2 (https://keybase.io/drm2) on keybase.
+  * I have a public key with fingerprint C798 26FA 0BE4 F412 6F26  09EC 1452 E930 4B4A D6CB
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e66054869b4ce903465eca9a45260ba04db8bc06e987af7f9c8b024723817d020a",
+            "fingerprint": "c79826fa0be4f4126f2609ec1452e9304b4ad6cb",
+            "host": "keybase.io",
+            "key_id": "1452e9304b4ad6cb",
+            "kid": "0101e66054869b4ce903465eca9a45260ba04db8bc06e987af7f9c8b024723817d020a",
+            "uid": "8bedca228aaff380ddaed5fc326b4e19",
+            "username": "drm2"
+        },
+        "service": {
+            "hostname": "drm2.co",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1473631952,
+    "expire_in": 157680000,
+    "prev": "d2d5830d4d153dde435ae0cb53ca1db212bc3a8237aa48ab14b732aa0c5c282b",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMIiAnicrVJbSFRRFB11NDKGLAtMP4KropLoueee+5oeFEpmJT0hSmk4r2u3dGa8
+M06piBk9CEwyMoroQQlFFJlQH5bYlJFQUGgKffRRpEZFH4bSh1jnSkEffXZ+ztn7
+rLX22ps94EvypCZ4eqa+THQ8HE54EW+v9+waGX3dJJEQa5D8TdIBPnfxGsYj0cAB
+m0l+CchA5poGVGRoJkGUm0BBmsopNjFSoQYIBogRg1CgcdPQsaVbJjUIgEiHiiHr
+DECApULJsoPV3Ak7djAqZKluGlCzMCAcWUgWTyFlcioLTW4qABGEmUaJIO4LRVyG
+MEdwhBfZIZETQWDO3j/w/9l3/ZycQTijGEIDY8tSDMAY5ky1qAI1grhsusAId4K4
+lgs0c2qh1FwoiUzMptwdqtvFX79F1G0j7ISiIRqqEcl90Wg44ndJ0YawizrISeA3
+P0DsIBPjE4wYdyJ2KCj5ZYGkUdsVlJGuaIpsqrBQ4ofCtsMDtotQdc0A4rh1eMwt
+DJlqKIAhJqsKYxwpKuaAElWhWGYEypBQBRtQ0TFGBiYyIroCMQZUpdCA7nAjvC4Y
+kvyqsImrhWTErg7iaL3DpeYnj6u8noRUT0pyortWntT5aX+W7cHIvFlttLjkGri5
+MWcoaax7oC1+ZmZZ9o5se3b1dOnnjdf3rknNrek8X5ExduvZ9J7ipsrWjCstP7xv
+Jka3zQxf7PWxHO/6u/GyT52NPavW7TzbNJi7YLPnw9B2K+9N66ORBWsJenb/7Ivc
+8Pj7RvhxaXp6WV135eqB5vtpVV+Xf1t09emW0rftbeW+Cu9sUvC5vGJa65of603c
+P5ZXO3Xs9MXJDb6DK5d8v1NyOfNcy+TuohLfbaN8/MS3/t6faXWHM3aeWjZY+m5X
+XmVyNe6fynr5eFjpyH/lZPVlt0xlnewbn5jILHh1ITYyvad/KHdhwZ3dWfmZR490
+xTdf2lR8fHH3vRs/t6b0/QLABD8a
+=CZV9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/drm2
+
+==================================================================
